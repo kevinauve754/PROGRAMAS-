@@ -1,0 +1,39 @@
+//Kevin Eduardo González Avendaño
+//24/09/2020
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float a, b, c;
+    float praiz, raiz, bob, numex1, numex2,x1,x2;
+
+    printf("COLOQUE A DE LA ECUACION: \n");
+    scanf("%f", &a);
+    printf("COLOQUE B DE LA ECUACION : \n");
+    scanf("%f", &b);
+    printf("COLOQUE C DE LA ECUACION: \n");
+    scanf("%f", &c);
+
+
+    bob=-(4)*(a)*(c);
+    praiz=(b*b)+(bob);
+    raiz=sqrt(praiz);
+    numex1=(-b)+(raiz);
+    x1=numex1/2*a;
+    numex2=(-b)-(raiz);
+    x2=numex2/2*a;
+
+    if (x1==x2)
+    {
+        printf("EL RESULATDO PARA X ES: %0.0f\n",x1);
+    }
+    else
+    {
+        printf("EL RESULTADO PARA X1 ES: %0.0f\n",x1);
+        printf("EL RESULTADO PARA X2 ES: %0.0f\n",x2);
+
+    }
+    
+return 0;
+}

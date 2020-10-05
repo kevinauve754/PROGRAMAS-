@@ -1,0 +1,130 @@
+//Kevin Eduardo González Avendaño
+//24/09/2020
+#include <stdio.h>
+
+int main()
+{
+    char cal1,cal2,cal3;
+    float Ka,Ge,La;
+    float prom;
+
+    printf("Primer calificacion: \n");
+    scanf("%c",&cal1);
+    printf("Segunda calificacion: \n");
+    fflush(stdin);
+    scanf("%c",&cal2);
+    printf("Tercera calificacion: \n");
+    fflush(stdin);
+    scanf("%c",&cal3);
+
+    if (cal1=='A' || cal1=='a')
+    {
+        Ka=10;
+    }
+    else if (cal1=='B' || cal1=='b')
+    {
+        Ka=9;
+    }
+    else if (cal1=='C' || cal1=='c')
+    {
+        Ka=8;
+    }
+    else if (cal1=='D' || cal1=='d')
+    {
+        Ka=7;
+    }
+    else if (cal1=='E' || cal1=='e')
+    {
+        Ka=6;
+    }
+    else if (cal1=='F' || cal1=='f')
+    {
+        Ka=5;
+    }
+// SEGUNDA PARTE
+
+    if (cal2=='A' || cal2=='a')
+    {
+        Ge=10;
+    }
+    else if (cal2=='B' || cal2=='b')
+    {
+        Ge=9;
+    }
+    else if (cal2=='C' || cal2=='c')
+    {
+        Ge=8;
+    }
+    else if (cal2=='D' || cal2=='d')
+    {
+        Ge=7;
+    }
+    else if (cal2=='E' || cal2=='e')
+    {
+        Ge=6;
+    }
+    else if (cal2=='F' || cal2=='f')
+    {
+        Ge=5;
+    }
+
+//TERCERA PARTE
+
+    if (cal3=='A' || cal3=='a')
+    {
+        La=10;
+    }
+    else if (cal3=='B' || cal3=='b')
+    {
+        La=9;
+    }
+    else if (cal3=='C' || cal3=='c')
+    {
+        La=8;
+    }
+    else if (cal3=='D' || cal3=='d')
+    {
+        La=7;
+    }
+    else if (cal3=='E' || cal3=='e')
+    {
+        La=6;
+    }
+    else if (cal3=='F' || cal3=='f')
+    {
+        La=5;
+    }
+
+    prom=(Ka+Ge+La)/3;
+    printf("El promedio es: %0.2f \n",prom);
+
+    if(prom>9.5)
+
+    {
+        printf("TIENES A DE CALIFICACION");
+    }
+
+    else if(prom>8.5 && prom<=9.4)
+    {
+        printf("TIENES B DE CALIFICACION");
+    }
+    if(prom>7.5 && prom<=8.4)
+    {
+        printf("TIENES C DE CALIFICACION");
+    }
+    if(prom>6.5 && prom<=7.4)
+    {
+        printf("TIENES D DE CALIFICACION");
+    }
+    if(prom>5.5 && prom<=6.4)
+    {
+        printf("TIENES E DE CALIFICACION");
+    }
+    if(prom>4.5 && prom<=5.4)
+    {
+        printf("TIENES F DE CALIFICACION");
+    }
+
+
+return 0;
+}
